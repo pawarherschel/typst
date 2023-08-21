@@ -4,15 +4,25 @@
 
 #cvSkill(
   type: [Languages],
-  info: [English #hBar() French #hBar() Chinese]
+  info: [English #hBar() Hindi #hBar() Marathi]
 )
 
 #cvSkill(
-  type: [Tech Stack],
-  info: [Tableau #hBar() Python (Pandas/Numpy) #hBar() PostgreSQL]
+  type: [Project],
+  info: [Rust #hBar() SQL #hBar() Python #hBar() GDScript]
+)
+
+#cvSkill(
+  type: [Libraries],
+  info: [Clap (Rust) #hBar() Rayon (Rust) #hBar() ureq (Rust) #hBar() SQLx (Rust) #hBar() SurrealDB (Rust) #hBar() python-osc (Python)]
 )
 
 #cvSkill(
   type: [Personal Interests],
-  info: [Swimming #hBar() Cooking #hBar() Reading]
+  info: [Manga & Scanlation #hBar() VRChat #hBar() Game Development]
+)
+
+#cvSkill(
+  type: [Software Tools],
+  info: [Git #hBar() Photoshop #hBar() Godot #hBar() Microsoft Word #hBar() Typst #hBar() Docker]
 )

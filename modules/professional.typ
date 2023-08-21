@@ -3,37 +3,23 @@
 #cvSection("Professional Experience")
 
 #cvEntry(
-    title: [Director of Data Science],
-    society: [XYZ Corporation],
-    logo: "../src/logos/xyz_corp.png",
-    date: [2020 - Present],
-    location: [San Francisco, CA],
+    title: [Deployment Head],
+    society: [SHAN: Shift Handover Apllication for Nurses],
+    logo: "",
+    date: [2023 - 2024],
+    location: [MGM's College of Engineering, Kamothe, Navi Mumbai],
     description: list(
-      [Lead a team of data scientists and analysts to develop and implement data-driven strategies, develop predictive models and algorithms to support decision-making across the organization],
-      [Collaborate with executive leadership to identify business opportunities and drive growth, implement best practices for data governance, quality, and security],
+      [Deployed the website for a collaborative project between the engineering college undergrad students and the medical college student],
+      [Frontend was deployed on Cloudflare Pages and the Backend was deployed on Cyclic],
+      [The website was created using MERN Stack],
     )
 )
 
 #cvEntry(
-    title: [Data Analyst],
-    society: [ABC Company],
-    logo: "../src/logos/abc_company.png",
-    date: [2017 - 2020],
-    location: [New York, NY],
-    description: list(
-      [Analyze large datasets using SQL and Python, collaborate with cross-functional teams to identify business insights],
-      [Create data visualizations and dashboards using Tableau, develop and maintain data pipelines using AWS],
-    )
-)
-
-#cvEntry(
-    title: [Data Analysis Intern],
-    society: [PQR Corporation],
-    logo: "../src/logos/pqr_corp.png",
-    date: [Summer 2017],
-    location: [Chicago, IL],
-    description: list(
-      [Assisted with data cleaning, processing, and analysis using Python and Excel, participated in team meetings and contributed to project planning and execution],
-      [Developed data visualizations and reports to communicate insights to stakeholders, collaborated with other interns and team members to complete projects on time and with high quality],
-    )
+    title: [Chairman],
+    society: [MGMCET's IEEE Student Branch],
+    logo: "../src/logos/mgmcet ieee.png",
+    date: [2024],
+    location: [MGM's College of Engineering, Kamothe, Navi Mumbai],
+    description: list()
 )

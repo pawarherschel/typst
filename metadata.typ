@@ -1,31 +1,33 @@
 /* Personal Information */
 
-#let firstName = "John"
-#let lastName = "Doe"
+#let firstName = "Herschel"
+#let lastName = "Pawar"
 #let personalInfo = (
-  github: "mintyfrankie",
-  phone: "+33 6 12 34 56 78",
-  email: "john.doe@me.org",
-  linkedin: "johndoe",
+  github: "pawarherschel",
+  phone: "+91 83107 83472",
+  email: "pawarherschel@gmail.com",
+  linkedin: "pawarherschel",
   //gitlab: "mintyfrankie",
-  //homepage: "jd.me.org",
+  homepage: "sakurakat.systems",
   //orcid: "0000-0000-0000-0000",
   //researchgate: "John-Doe",
-  //extraInfo: "",
+  // extraInfo: "asdf",
 )
+
 #let headerQuoteInternational = (
-  "": [Experienced Data Analyst looking for a full time job starting from now],
-  "en": [Experienced Data Analyst looking for a full time job starting from now],
-  "fr": [Analyste de données expérimenté à la recherche d’un emploi à temps plein disponible dès maintenant]
+  "": [Enthusiastic learner, curious about everything. 
+  
+  Looking forward to work on projects that make a difference.],
 )
 
 /* Layout Setting */
 
 // Optional: skyblue, red, nephritis, concrete, darknight
-#let awesomeColor = "skyblue"
+#let awesomeColor = "red"
 
 // Leave blank if profil photo is not needed
-#let profilePhoto = "../src/avatar.png" 
+// #let profilePhoto = "../src/avatar.png" 
+#let profilePhoto = ""
 
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
@@ -40,12 +42,12 @@
 // for cvFooter and letterFooter arrays, add your own languages while the keys must match the varLanguage variable
 #let cvFooterInternational = (
   "": "Curriculum vitae",
-  "en": "Curriculum vitae",
-  "fr": "Résumé"
+  // "en": "Curriculum vitae",
+  // "fr": "Résumé"
 )
 
 #let letterFooterInternational = (
   "": "Cover Letter",
-  "en": "Cover Letter",
-  "fr": "Lettre de motivation",
+  // "en": "Cover Letter",
+  // "fr": "Lettre de motivation",
 )
