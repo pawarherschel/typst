@@ -28,8 +28,8 @@ As a highly motivated and detail-oriented individual, I am confident that I woul
 
 Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
 
-Sincerely,
-
-#letterSignature("/src/signature.png")
+Sincerely, \
+// #letterSignature("/src/signature.png")
+Herschel Pravin Pawar
 #letterFooter()
 
