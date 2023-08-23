@@ -3,3 +3,6 @@
 
 # MacOS specific files (Apple sucks)
 .DS_Store
+
+src/signature.png
+letter.pdf

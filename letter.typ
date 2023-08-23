@@ -3,26 +3,28 @@
 #set text(size: 12pt) //set global font size
 
 #letterHeader(
-  myAddress: [1 Rue Gonnet \ 75003 Paris, France],
-  recipientName: [ABC Company],
-  recipientAddress: [15 Boulevard Roi \ 75011 Paris, France],
+  myAddress: [Kharghar, \ Navi Mumbai, \ Maharashtra, \ India - 410210],
+  recipientName: [Caminosoft AI],
+  recipientAddress: [],
   date: [05/05/2023],
-  subject: "Subject: Job Application for Senior Data Analyst"
+  subject: "Subject: Job Application for Rust Programmer"
 )
 
 Dear Hiring Manager,
 
-I am excited to submit my application for the Senior Data Analyst position at ABC Company. With over 5 years of experience in data analysis and a demonstrated track record of success, I am confident in my ability to make a valuable contribution to your team.
+I am excited to submit my application for the Rust Programmer position at Caminosoft AI. I am a fresher with little to no experience. However, I am confident in my ability to make a valuable contribution to your team.
 
-In my current role as a Data Analyst at XYZ Company, I have gained extensive experience in data mining, quantitative analysis, and data visualization. Through my work, I have developed a deep understanding of statistical concepts and have become adept at using tools such as SQL, Python, and R to extract insights from complex datasets. I have also gained valuable experience in presenting complex data in a visually appealing and easily accessible manner to stakeholders across all levels of an organization.
+So far, I've engaged in diverse roles and projects that have enriched my skillset and knowledge. As the Deployment Head for the "SHAN: Shift Handover Application for Nurses" project at MGM's College of Engineering, Navi Mumbai, I led the deployment of a collaborative website, bridging engineering and medical students. I successfully deployed the frontend on Cloudflare Pages and the backend on Cyclic, utilizing the MERN Stack to create an efficient and seamless platform.
 
-I believe that my experience in data analysis makes me an ideal candidate for the Senior Data Analyst position at ABC Company. I am particularly excited about the opportunity to apply my skills to support your organization's mission and drive impactful insights. Your focus on driving innovative solutions to complex problems aligns closely with my own passion for using data analysis to drive positive change in organizations.
+In my projects and associations, I've showcased my technical prowess and innovation. My "Booth Archiver" project, developed using Rust, demonstrates my ability to create practical tools. This CLI tool not only scrapes data from the Booth website but also generates Excel spreadsheets and markdown files for each item, showcasing a blend of automation and data manipulation skills.
 
-In my current role, I have been responsible for leading data projects from initiation to completion. I work closely with cross-functional teams to identify business problems and use data to develop solutions that drive business outcomes. I have a proven track record of delivering high-quality work on time and within budget.
+I've also ventured into software development through projects like "SQLx VRChat SQLite Test," where I experimented with the SQLx crate in Rust and integrated it with VRChat's SQLite database.
 
-Furthermore, I have extensive experience in developing and implementing data-driven solutions that improve business operations. For example, I have implemented predictive models that have improved sales forecasting accuracy by 10%, resulting in significant cost savings. I have also developed dashboards that provide real-time insights into business performance, enabling stakeholders to make more informed decisions.
+Additionally, my participation in the GMTK2023 Game Jam resulted in the creation of "Cosmos Conquerors," a game that ingeniously reverses roles from Space Invaders, demonstrating that I have worked under strict deadlines (48 hours from start to finish).
 
-As a highly motivated and detail-oriented individual, I am confident that I would thrive in the fast-paced and dynamic environment at ABC Company. I am excited about the opportunity to work with a talented team of professionals and to continue developing my skills in data analysis.
+Collectively, my professional journey encompasses technical proficiency, leadership, and creative problem-solving, positioning me as a well-rounded professional ready to tackle complex challenges in the field.
+
+As a highly motivated and detail-oriented individual, I am confident that I would thrive in the fast-paced and dynamic environment at Caminosoft AI. I am excited about the opportunity to work with a talented team of professionals and to continue developing my skills in data analysis.
 
 Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
 
