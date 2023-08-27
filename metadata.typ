@@ -15,8 +15,7 @@
 )
 
 #let headerQuoteInternational = (
-  "": [Enthusiastic learner, curious about everything. 
-  
+  "": [Enthusiastic learner, curious about everything.
   Looking forward to work on projects that make a difference.],
 )
 

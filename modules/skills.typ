@@ -26,3 +26,8 @@
   type: [Software Tools],
   info: [Git #hBar() Photoshop #hBar() Godot #hBar() Microsoft Word #hBar() Typst #hBar() Docker]
 )
+
+#cvSkill(
+  type: [Knowledge Areas],
+  info: [Docker #hBar() Cloudflare #hBar() Ansible #hBar() Linux #hBar() Power Automate]
+)
