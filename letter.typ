@@ -6,8 +6,8 @@
 
 #let date = {[#datetime.today().day()] + dateSeparator + [#datetime.today().month()] + dateSeparator + [#datetime.today().year()]}
 
-#let companyName = "Kwalee"
-#let jobTitle = "DevOps Engineer"
+#let companyName = "Emergio Edu tech"
+#let jobTitle = "Python Intern"
 
 #letterHeader(
   myAddress: [Kharghar, \ Navi Mumbai, \ Maharashtra, \ India - 410210],
