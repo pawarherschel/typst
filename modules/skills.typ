@@ -24,7 +24,7 @@
 
 #cvSkill(
   type: [Software Tools],
-  info: [Git #hBar() Photoshop #hBar() Godot #hBar() Microsoft Word #hBar() Typst #hBar() Docker]
+  info: [Git #hBar() Photoshop #hBar() Godot #hBar() Microsoft Word]
 )
 
 #cvSkill(

@@ -17,7 +17,7 @@
 #cvEntry(
   title: [SQLx VRChat SQLite Test],
   society: [Personal Project],
-  date: [2024 - Present],
+  date: [2024],
   location: [https://github.com/pawarherschel/sqlx-vrchat-sqlite-test],
   description: list(
     [A simple test project to test out the SQLx crate for Rust],
