@@ -1,4 +1,4 @@
-#import "../awesomeCV/template.typ": *
+#import "../template/template.typ": *
 
 #cvSection("Projects & Associations")
 
