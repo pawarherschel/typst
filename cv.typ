@@ -1,7 +1,7 @@
 #import "awesomeCV/template.typ": *
 #show: layout
 
-#cvHeader(hasPhoto: false, align: left)
+#cvHeader(align: left)
   #autoImport("education")
   #autoImport("professional")
   #autoImport("projects")
