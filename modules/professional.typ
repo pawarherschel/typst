@@ -13,12 +13,3 @@
       [The website was created using MERN Stack. Frontend was deployed on Cloudflare Pages and the Backend was deployed on Cyclic],
     )
 )
-
-#cvEntry(
-    title: [Chairman],
-    society: [MGMCET's IEEE Student Branch],
-    logo: "../src/logos/mgmcet ieee.png",
-    date: [2024],
-    location: [MGM's College of Engineering, Kamothe, Navi Mumbai],
-    description: list()
-)
