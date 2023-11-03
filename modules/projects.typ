@@ -61,13 +61,13 @@
   )
 )
 
-// #cvEntry(
-//   title: [Various Simple Games made in Godot],
-//   society: [Personal Projects],
-//   date: [2021],
-//   location: [https://github.com/SakuraKat],
-//   description: list(
-//     [Various simple games made in Godot],
-//     [Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake]
-//   )
-// )
+#cvEntry(
+  title: [Various Simple Games made in Godot],
+  society: [Personal Projects],
+  date: [2021],
+  location: [https://github.com/SakuraKat],
+  description: list(
+    [Various simple games made in Godot],
+    [Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake]
+  )
+)
