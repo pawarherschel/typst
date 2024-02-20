@@ -9,12 +9,12 @@
 
 #cvSkill(
   type: [Project],
-  info: [Rust #hBar() SQL #hBar() Python #hBar() GDScript]
+  info: [Rust #hBar() GDScript]
 )
 
 #cvSkill(
   type: [Libraries],
-  info: [Clap (Rust) #hBar() Rayon (Rust) #hBar() ureq (Rust) #hBar() SQLx (Rust) #hBar() SurrealDB (Rust) #hBar() python-osc (Python)]
+  info: [prost (Rust) #hBar() Clap (Rust) #hBar() Rayon (Rust) #hBar() ureq (Rust) #hBar() SQLx (Rust) #hBar() python-osc (Python)]
 )
 
 #cvSkill(
