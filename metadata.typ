@@ -5,11 +5,11 @@
 #let personalInfo = (
   github: "pawarherschel",
   phone: "+91 83107 83472",
-  email: "pawarherschel@gmail.com",
+  email: "pawarherschel@sakurakat.systems",
   linkedin: "pawarherschel",
   //gitlab: "mintyfrankie",
   homepage: "sakurakat.systems",
-  //orcid: "0000-0000-0000-0000",
+  orcid: "0009-0003-3218-801X",
   //researchgate: "John-Doe",
   // extraInfo: "asdf",
 )
@@ -26,7 +26,7 @@
 
 // Leave blank if profil photo is not needed
 // #let profilePhoto = "../src/avatar.png" 
-#let profilePhoto = ""
+#let profilePhoto = "../photo.png"
 
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
