@@ -21,8 +21,8 @@ jobs:
         with:
           version: 'latest'
 
-      - run: typst compile cv.typ --font-path ./src/fonts
-      - run: typst compile letter.typ --font-path ./src/fonts
+      - run: typst compile ./src/cv.typ ./output/CV.pdf --font-path ./src/fonts/ --root "."
+      - run: typst compile ./src/letter.typ ./output/Letter.pdf  --font-path ./src/fonts/ --root "."
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
