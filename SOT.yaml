@@ -50,6 +50,11 @@ projects:
         exist via the data collected by VRCX
       - Written in Rust, it uses the SQLite database created by VRCX to find out
         the friend circles
+    tags:
+      - Rust
+      - SQLite
+      - SQLx
+      - tokio
   - title: Booth Archiver
     society: Personal Project
     date: 2023 - Present
@@ -61,6 +66,12 @@ projects:
         each item
       - It then converts the data into an Excel spreadsheet and writes markdown
         files for each item
+    tags:
+      - Rust
+      - Rayon
+      - ureq
+      - Web Scraping
+      - Excel
   - title: Tachiyomi Backup to AniList
     society: Personal Project
     date: 2024 - Present
@@ -70,6 +81,9 @@ projects:
       - A simple CLI tool to sync manga from Tachiyomi backup to AniList
       - Tachiyomi's backup is a gzipped protobuf file, this tool reads the file
         and syncs the manga to AniList
+    tags:
+      - Rust
+      - prost
   - title: Stock Crasher
     society: Personal Project
     date: "2023"
@@ -79,6 +93,9 @@ projects:
       - A silly cli tool to show the current price of a stock in VRChat using OSC
       - It gets the stock price from Yahoo Finance and sends it to VRChat via
         the OSC protocol
+    tags:
+      - python
+      - OSC
   - title: Cosmos Conquerors (GMTK2023)
     society: GMTK2023 Game Jam
     date: "2023"
@@ -89,6 +106,9 @@ projects:
       - This is a simple game where the roles from the game Space Invaders are
         reversed.
       - Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)
+    tags:
+      - Godot
+      - GDScript
   - title: Various Simple Games made in Godot
     society: Personal Projects
     date: "2021"
@@ -98,6 +118,9 @@ projects:
       - Various simple games made in Godot as Proof of Concepts
       - Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical
         Marshmellow, Game Of Life, Minesweeper, Pong, Snake
+    tags:
+      - Godot
+      - GDScript
 publications:
   - title:
       Social Circle Mining in VRChat Through Activity Frequencies Using Fuzzy
@@ -130,6 +153,7 @@ skills:
       - Rayon
       - ureq
       - SQLx
+      - tokio
   - type: Personal Interests
     info:
       - Manga & Scanlation
@@ -148,3 +172,4 @@ skills:
       - Ansible
       - Linux
       - Power Automate
+      - Web Scraping

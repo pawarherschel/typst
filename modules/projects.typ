@@ -21,13 +21,18 @@
     }
   }
   let description = join-as-bullet-list(project.description)
+  let tags = ()
+  if project.keys().contains("tags") {
+    tags = project.tags
+  }
   
   cvEntry(
       title: title,
       society: society,
       date: date,
       location: location,
-      description: description
+      description: description,
+      tags: tags
     )
   }
 }
