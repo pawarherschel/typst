@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = toml("../SOT.toml")
+#let SOT = yaml("../SOT.yaml")
 #let publications = ()
 #if SOT.keys().contains("publications") {
   publications = SOT.publications

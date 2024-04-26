@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = toml("../SOT.toml")
+#let SOT = yaml("../SOT.yaml")
 #let education = ()
 #if SOT.keys().contains("education") {
   education = SOT.education

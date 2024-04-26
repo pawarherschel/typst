@@ -1,6 +1,6 @@
 /* Personal Information */
 
-#let SOT = toml("../SOT.toml")
+#let SOT = yaml("../SOT.yaml")
 #let metadata = SOT.metadata
 
 #let firstName = metadata.firstName
