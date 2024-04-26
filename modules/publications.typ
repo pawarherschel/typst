@@ -1,34 +1,49 @@
 #import "../template/template.typ": *
+#import "../helpers/helpers.typ": *
 
-#cvSection("Publications")
+#let SOT = toml("../SOT.toml")
+#let publications = ()
+#if SOT.keys().contains("publications") {
+  publications = SOT.publications
+}
 
-#cvEntry(
-  title: [Social Circle Mining in VRChat Through Activity Frequencies Using Fuzzy DBSCAN],
-  society: [(ongoing)],
-  date: [2023 - Present],
-  location: [https://github.com/pawarherschel/vrcx-insights],
-  description: list(
-    [Ongoing research project to find out the various friend circles which might exist via the data collected by VRCX],
-    [Uses Fuzzy DBSCAN to cluster users based on their activity frequencies],
-  )
-)
+#if publications.len() != 0 {
+  cvSection("Publications")
 
-// #cvEntry(
-//   title: [VRCX Insights],
-//   society: [Personal Project],
-//   date: [2023 - Present],
-//   location: [https://github.com/pawarherschel/vrcx-insights],
-//   description: list(
-//     [A simple program to find out the various friend circles which might exist via the data collected by VRCX],
-//     [Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles],
-//     [It then generates a graph and sorts the friend circles by size]
-//   )
-// )
-// #cvPublication(
-//   bibPath: "../src/publications.bib",
-//   keyList: (
-//     "smith2020",
-//     "jones2021",
-//     "wilson2022"),
-//   refStyle: "apa"  
-// )
+  for publication in publications {
+    let title = publication.title
+    let society = publication.society
+    let date = publication.date
+    let location = for key in publication.location.keys() {
+      let v = publication.location.at(key)
+      if key == "github" {
+        github-link(v)
+      }
+    }
+    let description = join-as-bullet-list(publication.description)
+    
+    cvEntry(
+        title: title,
+        society: society,
+        date: date,
+        location: location,
+        description: description
+      )
+  }
+}
+
+#if SOT.keys().contains("bibliography") {
+  let bib = SOT.bibliography
+  let bibPath = bib.bibPath
+  if bibPath.len() != 0 {
+    bibPath = "../" + bibPath
+  }
+  let refStyle = bib.refStyle
+  
+  if bibPath.len() != 0 {
+    cvPublication(
+      bibPath: bibPath,
+      refStyle: refStyle,
+    )
+  }
+}

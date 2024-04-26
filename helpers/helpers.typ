@@ -18,3 +18,34 @@
     #fa-icon("github", fa-set: "Brands", fill: color-darkgray) #link("https://github.com/" + github_path, github_path)
   ]
 }
+
+#import "../template/template.typ": hBar
+
+#let join-with-hBar = arr => {
+  arr.join(
+    eval(
+      "sep",
+      mode: "code",
+      scope: (
+        sep : hBar()
+      )
+    )
+  )
+}
+
+
+#let join-as-bullet-list = arr => {
+  if arr.len() == 0 {
+    return list()
+  }
+
+  let list = arr.map(item => {
+    return "- " + item
+  }).join("\n")
+  
+  eval(
+    list,
+    mode: "markup",
+  )
+}
+

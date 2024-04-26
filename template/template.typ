@@ -3,7 +3,7 @@
 // Typst version: 0.9.0
 
 /* Packages */
-#import "../metadata.typ": *
+#import "../src/metadata.typ": *
 #import "@preview/fontawesome:0.1.0": *
 
 

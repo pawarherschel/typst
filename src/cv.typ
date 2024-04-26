@@ -1,4 +1,4 @@
-#import "template/template.typ": *
+#import "../template/template.typ": *
 #show: layout
 
 #cvHeader(align: left)

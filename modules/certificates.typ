@@ -1,21 +1,24 @@
 #import "../template/template.typ": *
+#import "../helpers/helpers.typ": *
 
-// #cvSection("Certificates")
+#let SOT = toml("../SOT.toml")
+#let certificates = ()
+#if SOT.keys().contains("certificates") {
+  certificates = SOT.certificates
+}
 
-// #cvHonor(
-//   date: [2022],
-//   title: [AWS Certified Security],
-//   issuer: [Amazon Web Services (AWS)],
-// )
+#if certificates.len() != 0 {
+  cvSection("Certificates")
 
-// #cvHonor(
-//   date: [2017],
-//   title: [Applied Data Science with Python],
-//   issuer: [Coursera]
-// )
+  for certificate in certificates {
+    let date = certificate.date
+    let title = certificate.title
+    let issuer = certificate.issuer
 
-// #cvHonor(
-//   date: [],
-//   title: [SQL Fundamentals Track],
-//   issuer: [Datacamp]
-// )
+    cvHonor(
+      date: date,
+      title: title,
+      issuer: issuer,
+    )
+  }
+}

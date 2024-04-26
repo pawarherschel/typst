@@ -1,15 +1,33 @@
 #import "../template/template.typ": *
+#import "../helpers/helpers.typ": *
 
-// #cvSection("Professional Experience")
-//
-// #cvEntry(
-//     title: [Deployment Head],
-//     society: [SHAN: Shift Handover Apllication for Nurses],
-//     logo: "",
-//     date: [2023 - 2024],
-//     location: [MGM's College of Engineering, Kamothe, Navi Mumbai],
-//     description: list(
-//       [Deployed the website for a collaborative project between the engineering college undergrad students and the medical college student],
-//       [The website was created using MERN Stack. Frontend was deployed on Cloudflare Pages and the Backend was deployed on Cyclic],
-//     )
-// )
+#let SOT = toml("../SOT.toml")
+#let professional = ()
+#if SOT.keys().contains("professional") {
+  professional = SOT.professional
+}
+
+#if professional.len() != 0 {
+  cvSection("Professional Experience")
+
+  for entry in professional {
+    let title = entry.title
+    let society = entry.society
+    let logo = ""
+    if entry.keys().contains("logo") {
+      logo = entry.logo
+    }
+    let date = entry.date
+    let location = entry.location
+    let description = join-as-bullet-list(entry.description)
+
+    cvEntry(
+      title: title,
+      society: society,
+      logo: logo,
+      date: date,
+      location: location,
+      description: description
+    )
+  }
+}
