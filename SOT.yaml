@@ -18,9 +18,24 @@ metadata:
     linkedin: pawarherschel
     homepage: sakurakat.systems
     orcid: 0009-0003-3218-801X
-certificate:
-  - {}
+certificates:
+  - date: 1st - 26th July 2024
+    title: Certificate of Participation in Coventry University Summer Schools Games Design Programme
+    issuer: Shawnna Pomeroy (Programme Manager - Summer Schools)
+    url: https://r2.sakurakat.systems/covuni-s-school.pdf
+    location: Coventry University, United Kingdom
+  - date: 1st - 26th July 2024
+    title: Certificate of Participation in Coventry University's School of Computing, Mathematics and Data Science Summer School in Game Development
+    issuer: Adam Worrallo (Head of Summer School), Faye Mitchell (Head of School), Becky Butler (Dean of College)
+    url: https://r2.sakurakat.systems/covuni-gamedev.pdf
+    location: Coventry University, United Kingdom
 education:
+  - title: Global Summer School
+    society: Coventry University
+    date: 1st July 2024 - 26th July 2024
+    location: CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom
+    logo: src/logos/covuni.jpg
+    description: []
   - title: Bachelors of Engineering in Information Technology
     society: University of Mumbai
     date: 2020 - 2024
@@ -51,6 +66,7 @@ projects:
       - Written in Rust, it uses the SQLite database created by VRCX to find out
         the friend circles
     tags:
+      - Data Mining
       - Rust
       - SQLite
       - SQLx
@@ -67,35 +83,48 @@ projects:
       - It then converts the data into an Excel spreadsheet and writes markdown
         files for each item
     tags:
+      - Web Scraping
       - Rust
       - Rayon
       - ureq
-      - Web Scraping
       - Excel
-  - title: Tachiyomi Backup to AniList
-    society: Personal Project
-    date: 2024 - Present
+  # - title: Tachiyomi Backup to AniList
+  #   society: Personal Project
+  #   date: 2024 - Present
+  #   location:
+  #     github: pawarherschel/tachiyomi-backup-to-anilist
+  #   description:
+  #     - A simple CLI tool to sync manga from Tachiyomi backup to AniList
+  #     - Tachiyomi's backup is a gzipped protobuf file, this tool reads the file
+  #       and syncs the manga to AniList
+  #   tags:
+  #     - Rust
+  #     - prost
+  # - title: Stock Crasher
+  #   society: Personal Project
+  #   date: "2023"
+  #   location:
+  #     github: SakuraKat/stock-crasher
+  #   description:
+  #     - A silly cli tool to show the current price of a stock in VRChat using OSC
+  #     - It gets the stock price from Yahoo Finance and sends it to VRChat via
+  #       the OSC protocol
+  #   tags:
+  #     - python
+  #     - OSC
+  - title: Fractured Elements
+    society: Coventry University Summer School '24 Game Jam
+    date: July 26th 2024
     location:
-      github: pawarherschel/tachiyomi-backup-to-anilist
+      github: pawarherschel/CovUniGJ2024
     description:
-      - A simple CLI tool to sync manga from Tachiyomi backup to AniList
-      - Tachiyomi's backup is a gzipped protobuf file, this tool reads the file
-        and syncs the manga to AniList
+      - \"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.
+      - The main character changes form every few seconds and each form has a unique associated attack.
+      - Available on itch.io (https://pawarherschel.itch.io/fractured-elements)
     tags:
-      - Rust
-      - prost
-  - title: Stock Crasher
-    society: Personal Project
-    date: "2023"
-    location:
-      github: SakuraKat/stock-crasher
-    description:
-      - A silly cli tool to show the current price of a stock in VRChat using OSC
-      - It gets the stock price from Yahoo Finance and sends it to VRChat via
-        the OSC protocol
-    tags:
-      - python
-      - OSC
+      - Game Development
+      - Unity
+      - C#
   - title: Cosmos Conquerors (GMTK2023)
     society: GMTK2023 Game Jam
     date: "2023"
@@ -107,6 +136,7 @@ projects:
         reversed.
       - Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)
     tags:
+      - Game Development
       - Godot
       - GDScript
   - title: Various Simple Games made in Godot

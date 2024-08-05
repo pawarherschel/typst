@@ -14,11 +14,15 @@
     let date = certificate.date
     let title = certificate.title
     let issuer = certificate.issuer
+    let url = certificate.url
+    let location = certificate.location
 
     cvHonor(
       date: date,
       title: title,
       issuer: issuer,
+      url: url,
+      location: location,
     )
   }
 }
