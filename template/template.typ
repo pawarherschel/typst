@@ -36,13 +36,15 @@
 }
 
 #let languageSwitch(dict) = {
-  for (k, v) in dict {
-    if k == varLanguage {
-      return v
-      break
+  if dict != none {
+    for (k, v) in dict {
+      if k == varLanguage {
+        return v
+        break
+      }
     }
+    panic("i18n: language value not matching any key in the array")
   }
-  panic("i18n: language value not matching any key in the array")
 }
 
 

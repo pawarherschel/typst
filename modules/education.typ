@@ -9,6 +9,8 @@
 
 #if education.len() != 0 {
   cvSection("Education")
+
+  set block(spacing: 0em)
   
   for entry in education {
     let title = entry.title
@@ -21,6 +23,7 @@
     }
     let description = join-as-bullet-list(entry.description)
     
+
     cvEntry(
       title: title,
       society: society,
@@ -31,4 +34,3 @@
     )
   }
 }
-

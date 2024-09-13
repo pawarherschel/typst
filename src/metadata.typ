@@ -44,9 +44,13 @@
 //   // extraInfo: "asdf",
 // )
 
-#let headerQuoteInternational = (
-  "": metadata.headerQuote.join("\n"),
-)
+#let headerQuoteInternational = none
+
+#if metadata.headerQuote != none {
+  headerQuoteInternational = (
+    "": metadata.headerQuote.join("\n"),
+  )
+}
 
 /* Layout Setting */
 
