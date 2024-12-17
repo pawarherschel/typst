@@ -78,7 +78,8 @@ description = [
   "Available on itch.io (https://pawarherschel.itch.io/fractured-elements)",
 ]
 tags = ["Game Development", "Unity", "C#"]
-location.github = "pawarherschel/CovUniGJ2024"
+[projects.location]
+github = "pawarherschel/CovUniGJ2024"
 
 [[projects]]
 visible = true
@@ -91,7 +92,8 @@ description = [
   "Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
 ]
 tags = ["Game Development", "Godot", "GDScript"]
-location.github = "pawarherschel/GMTK2023"
+[projects.location]
+github ="pawarherschel/GMTK2023"
 
 [[projects]]
 visible = true
@@ -103,7 +105,8 @@ description = [
   "It's being used as playground for networking",
 ]
 tags = ["Rust", "Bevy", "Game Development"]
-location.github = "pawarherschel/bevy-pong"
+[projects.location]
+github ="pawarherschel/bevy-pong"
 
 [[projects]]
 visible = true
@@ -115,7 +118,8 @@ description = [
   "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
 ]
 tags = ["Godot", "GDScript"]
-location.github = "SakuraKat"
+[projects.location]
+github ="SakuraKat"
 
 [[projects]]
 visible = false
@@ -127,7 +131,8 @@ description = [
   "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles",
 ]
 tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
-location.github = "pawarherschel/vrcx-insights"
+[projects.location]
+github ="pawarherschel/vrcx-insights"
 
 [[projects]]
 visible = false
@@ -140,7 +145,8 @@ description = [
   "It then converts the data into an Excel spreadsheet and writes markdown files for each item.",
 ]
 tags = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
-location.github = "pawarherschel/booth_archiver"
+[projects.location]
+github ="pawarherschel/booth_archiver"
 
 [[projects]]
 visible = false
@@ -159,7 +165,8 @@ tags = [
   "Real-time Communication",
   "Serverless",
 ]
-location.github = "pawarherschel/workers-durable-object-websocket-synced"
+[projects.location]
+github ="pawarherschel/workers-durable-object-websocket-synced"
 
 [[projects]]
 visible = false
@@ -172,7 +179,8 @@ description = [
   "The repository includes sample Brainfuck programs and provides a complete implementation in Rust.",
 ]
 tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
-location.github = "pawarherschel/BFCranelift"
+[projects.location]
+github ="pawarherschel/BFCranelift"
 
 [[projects]]
 visible = true
@@ -192,7 +200,8 @@ tags = [
   "GIMP",
   "CLI Tool",
 ]
-location.github = "pawarherschel/krita-palette-creator"
+[projects.location]
+github ="pawarherschel/krita-palette-creator"
 
 [[projects]]
 visible = false
@@ -205,7 +214,8 @@ description = [
   "The implementation includes features like anti-aliasing, multiple object rendering, and image output in both PPM and PNG formats.",
 ]
 tags = ["Ray Tracing", "Rust", "Rayon", "image"]
-location.github = "pawarherschel/raytracinginrust"
+[projects.location]
+github ="pawarherschel/raytracinginrust"
 
 [bibliography]
 bibPath = ""
