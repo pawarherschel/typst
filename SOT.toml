@@ -1,0 +1,250 @@
+[metadata]
+firstName = "Herschel"
+lastName = "Pawar"
+headerQuote = [
+  "Enthusiastic learner; curious about everything.",
+  "Passionate about learning and creating; Looking forward to whatever the future brings.",
+]
+awesomeColor = "red"
+profilePhoto = "/src/photo.png"
+varLanguage = "en-US"
+varEntrySocietyFirst = false
+varDisplayLogo = true
+cvFooter = "Curriculum vitae"
+letterFooter = "Cover Letter"
+
+[metadata.personalInfo]
+github = "pawarherschel"
+phone = "+91 83107 83472"
+email = "pawarherschel@sakurakat.systems"
+linkedin = "pawarherschel"
+homepage = "sakurakat.systems"
+orcid = "0009-0003-3218-801X"
+
+[[certificates]]
+date = "1st - 26th July 2024"
+title = "Certificate of Participation in Coventry University Summer Schools Games Design Programme"
+issuer = "Shawnna Pomeroy (Programme Manager - Summer Schools)"
+url = "https://r2.sakurakat.systems/covuni-s-school.pdf"
+location = "Coventry University, United Kingdom"
+
+[[certificates]]
+date = "1st - 26th July 2024"
+title = "Certificate of Participation in Coventry University's School of Computing, Mathematics and Data Science Summer School in Game Development"
+issuer = "Adam Worrallo (Head of Summer School), Faye Mitchell (Head of School), Becky Butler (Dean of College)"
+url = "https://r2.sakurakat.systems/covuni-gamedev.pdf"
+location = "Coventry University, United Kingdom"
+
+[[education]]
+title = "Global Summer School"
+society = "Coventry University"
+date = "1st July 2024 - 26th July 2024"
+location = "CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom"
+logo = "src/logos/covuni.jpg"
+description = []
+
+[[education]]
+title = "Bachelors of Engineering in Information Technology"
+society = "University of Mumbai"
+date = "2020 - 2024"
+location = "MGM College of Engineering and Technology, Kamothe, Navi Mumbai, India"
+logo = "src/logos/mgmcet.jpeg"
+description = []
+
+[[education]]
+title = "Higher Secondary School Certificate"
+society = "Central Board of Secondary Education"
+date = "2018 - 2020"
+location = "Greenfingers Global School, Kharghar, Navi Mumbai, India"
+logo = "src/logos/gfgs.png"
+description = []
+
+[[education]]
+title = "Secondary School Certificate"
+society = "Indian Certificate of Secondary Education"
+date = "2008 - 2018"
+location = "Sanjivani International School, Kharghar, Navi Mumbai, India"
+logo = "src/logos/sis.png"
+description = []
+
+[[projects]]
+visible = true
+title = "Fractured Elements"
+society = "Coventry University Summer School '24 Game Jam"
+date = "July 2024"
+description = [
+  "\"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.",
+  "The main character changes form every few seconds and each form has a unique associated attack.",
+  "Available on itch.io (https://pawarherschel.itch.io/fractured-elements)",
+]
+tags = ["Game Development", "Unity", "C#"]
+location.github = "pawarherschel/CovUniGJ2024"
+
+[[projects]]
+visible = true
+title = "Cosmos Conquerors (GMTK2023)"
+society = "GMTK2023 Game Jam"
+date = "2023"
+description = [
+  "A game made for the GMTK Game Jam 2023, the theme was 'Roles Reverse'.",
+  "This is a simple game where the roles from the game Space Invaders are reversed.",
+  "Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
+]
+tags = ["Game Development", "Godot", "GDScript"]
+location.github = "pawarherschel/GMTK2023"
+
+[[projects]]
+visible = true
+title = "Bevy Pong"
+society = "Personal Project"
+date = "October 2024"
+description = [
+  "A simple Pong game made with Bevy.",
+  "It's being used as playground for networking",
+]
+tags = ["Rust", "Bevy", "Game Development"]
+location.github = "pawarherschel/bevy-pong"
+
+[[projects]]
+visible = true
+title = "Various Simple Games made in Godot"
+society = "Personal Projects"
+date = "2021"
+description = [
+  "Various simple games made in Godot as Proof of Concepts for learning purposes",
+  "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
+]
+tags = ["Godot", "GDScript"]
+location.github = "SakuraKat"
+
+[[projects]]
+visible = false
+title = "VRCX Insights"
+society = "Personal Project"
+date = "2023 - Present"
+description = [
+  "A simple program to find out the various friend circles which might exist via the data collected by VRCX",
+  "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles",
+]
+tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
+location.github = "pawarherschel/vrcx-insights"
+
+[[projects]]
+visible = false
+title = "Booth Archiver"
+society = "Personal Project"
+date = "2023 - Present"
+description = [
+  "A simple CLI tool to archive the contents of your booth wishlist.",
+  "Written in Rust, it scrapes the Booth website and downloads images for each item.",
+  "It then converts the data into an Excel spreadsheet and writes markdown files for each item.",
+]
+tags = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
+location.github = "pawarherschel/booth_archiver"
+
+[[projects]]
+visible = false
+title = "Real-Time WebSocket Synchronization with Durable Objects"
+society = "Personal Project"
+date = "December 2024"
+description = [
+  "This repository contains a Cloudflare Workers project that demonstrates the use of Durable Objects to synchronize WebSocket connections.",
+  "It allows clients to send messages to increment, decrement, or get the current value of the counter, and broadcasts the updated counter value to all connected clients.",
+]
+tags = [
+  "Cloudflare Workers",
+  "Durable Objects",
+  "WebSocket",
+  "TypeScript",
+  "Real-time Communication",
+  "Serverless",
+]
+location.github = "pawarherschel/workers-durable-object-websocket-synced"
+
+[[projects]]
+visible = false
+title = "Brainfuck Compiler with Cranelift"
+society = "Personal Project"
+date = "November 18, 2024"
+description = [
+  "Following a blogpost https://rodrigodd.github.io/2022/11/26/bf_compiler-part3.html",
+  "The project demonstrates how to parse Brainfuck code, generate intermediate representation (IR) using Cranelift, and disassemble the generated machine code using Capstone.",
+  "The repository includes sample Brainfuck programs and provides a complete implementation in Rust.",
+]
+tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
+location.github = "pawarherschel/BFCranelift"
+
+[[projects]]
+visible = true
+title = "Krita Palette Creator"
+society = "Personal Project"
+date = "September 2024"
+description = [
+  "A tool to create Krita-compatible palettes from images by applying color quantization algorithms.",
+  "It generates a `.gpl` palette file and creates a preview image for visual reference.",
+  "Supports adjustable depth levels for quantization and optional color tolerance settings.",
+]
+tags = [
+  "Rust",
+  "Image Processing",
+  "Color Quantization",
+  "Krita",
+  "GIMP",
+  "CLI Tool",
+]
+location.github = "pawarherschel/krita-palette-creator"
+
+[[projects]]
+visible = false
+title = "Ray Tracing in Rust"
+society = "Personal Project"
+date = "December 17, 2024"
+description = [
+  "Made by following raytracing in a weekend",
+  "Parallelly processes with Rayon and provides progress indication using the Indicatif crate.",
+  "The implementation includes features like anti-aliasing, multiple object rendering, and image output in both PPM and PNG formats.",
+]
+tags = ["Ray Tracing", "Rust", "Rayon", "image"]
+location.github = "pawarherschel/raytracinginrust"
+
+[bibliography]
+bibPath = ""
+refStyle = "apa"
+
+[[skills]]
+visible = true
+type = "Natural Languages"
+info = ["English", "Hindi", "Marathi"]
+
+[[skills]]
+visible = true
+type = "Software Tools"
+info = ["Git", "Photoshop", "Krita", "Godot", "Microsoft Word", "VRoid Studio"]
+
+[[skills]]
+visible = true
+type = "Knowledge Areas"
+info = [
+  "Docker",
+  "Cloudflare",
+  "Ansible",
+  "Linux",
+  "NixOS",
+  "Power Automate",
+  "Web Scraping",
+]
+
+[[skills]]
+visible = true
+type = "Personal Interests"
+info = ["Manga & Scanlation", "VRChat", "Game Development", "GPU Acceleration"]
+
+[[skills]]
+visible = false
+type = "Projects"
+info = ["Rust", "GDScript"]
+
+[[skills]]
+visible = false
+type = "Libraries"
+info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]

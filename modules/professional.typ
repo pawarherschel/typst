@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = yaml("../SOT.yaml")
+#let SOT = toml("../SOT.toml")
 #let professional = ()
 #if SOT.keys().contains("professional") {
   professional = SOT.professional
@@ -27,7 +27,7 @@
       logo: logo,
       date: date,
       location: location,
-      description: description
+      description: description,
     )
   }
 }

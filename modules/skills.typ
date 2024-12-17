@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = yaml("../SOT.yaml")
+#let SOT = toml("../SOT.toml")
 #let skills = ()
 #if SOT.keys().contains("skills") {
   skills = SOT.skills
@@ -11,12 +11,16 @@
   cvSection("Skills")
 
   for skill in skills {
-  let type = skill.type
-  let info = join-with-hBar(skill.info)
-  
-  cvSkill(
+    let visible = skill.visible
+    if not visible {
+      continue
+    }
+    let type = skill.type
+    let info = join-with-hBar(skill.info)
+
+    cvSkill(
       type: type,
-      info: info
+      info: info,
     )
   }
 }

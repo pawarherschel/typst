@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = yaml("../SOT.yaml")
+#let SOT = toml("../SOT.toml")
 #let publications = ()
 #if SOT.keys().contains("publications") {
   publications = SOT.publications
@@ -21,14 +21,14 @@
       }
     }
     let description = join-as-bullet-list(publication.description)
-    
+
     cvEntry(
-        title: title,
-        society: society,
-        date: date,
-        location: location,
-        description: description
-      )
+      title: title,
+      society: society,
+      date: date,
+      location: location,
+      description: description,
+    )
   }
 }
 
@@ -39,7 +39,7 @@
     bibPath = "../" + bibPath
   }
   let refStyle = bib.refStyle
-  
+
   if bibPath.len() != 0 {
     cvPublication(
       bibPath: bibPath,

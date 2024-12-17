@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = yaml("../SOT.yaml")
+#let SOT = toml("../SOT.toml")
 #let certificates = ()
 #if SOT.keys().contains("certificates") {
   certificates = SOT.certificates

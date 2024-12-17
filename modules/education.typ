@@ -1,7 +1,7 @@
 #import "../template/template.typ": *
 #import "../helpers/helpers.typ": *
 
-#let SOT = yaml("../SOT.yaml")
+#let SOT = toml("../SOT.toml")
 #let education = ()
 #if SOT.keys().contains("education") {
   education = SOT.education
@@ -11,7 +11,7 @@
   cvSection("Education")
 
   set block(spacing: 0em)
-  
+
   for entry in education {
     let title = entry.title
     let society = entry.society
@@ -22,7 +22,7 @@
       logo = "../" + entry.logo
     }
     let description = join-as-bullet-list(entry.description)
-    
+
 
     cvEntry(
       title: title,
@@ -30,7 +30,7 @@
       date: date,
       location: location,
       logo: logo,
-      description: description
+      description: description,
     )
   }
 }
