@@ -2,8 +2,8 @@
 firstName = "Herschel"
 lastName = "Pawar"
 headerQuote = [
-  "Enthusiastic learner; Curious about everything.",
   "Passionate about learning and creating; Looking forward to whatever the future brings.",
+  "I occasionally write! Check out my blog and more details at https://sakurakat.systems/",
 ]
 awesomeColor = "red"
 profilePhoto = "/src/photo.png"
@@ -14,11 +14,11 @@ cvFooter = "Curriculum vitae"
 letterFooter = "Cover Letter"
 
 [metadata.personalInfo]
-github = "pawarherschel"
-phone = "+91 83107 83472"
-email = "pawarherschel@sakurakat.systems"
-linkedin = "pawarherschel"
 homepage = "sakurakat.systems"
+phone = "+91 83107 83472"
+github = "pawarherschel"
+linkedin = "pawarherschel"
+email = "pawarherschel@sakurakat.systems"
 orcid = "0009-0003-3218-801X"
 
 [[certificates]]
@@ -71,7 +71,7 @@ description = []
 description = [
   "\"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.",
   "The main character changes form every few seconds and each form has a unique associated attack.",
-  "Available on itch.io (https://pawarherschel.itch.io/fractured-elements)",
+  "Available to play on itch.io (https://pawarherschel.itch.io/fractured-elements)",
   "My contribution: Worked on game mechanics, character transitions, and attack implementations using Unity and CSharp",
 ]
 visible = true
@@ -79,11 +79,11 @@ title = "Fractured Elements"
 society = "Coventry University Summer School '24 Game Jam"
 date = "July 2024"
 tags = ["Game Development", "Unity", "C#"]
-preview = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
 [projects.location]
 github = "pawarherschel/CovUniGJ2024"
 
 [[projects]]
+preview = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
 visible = true
 title = "Cosmos Conquerors (GMTK2023)"
 society = "GMTK2023 Game Jam"
@@ -91,11 +91,10 @@ date = "2023"
 description = [
   "A game made for the GMTK Game Jam 2023, the theme was 'Roles Reverse'.",
   "This is a simple game where the roles from the game Space Invaders are reversed.",
-  "Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
+  "Available to play on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
   "My contribution: The whole game.",
 ]
 tags = ["Game Development", "Godot", "GDScript"]
-preview = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
 [projects.location]
 github = "pawarherschel/GMTK2023"
 
@@ -121,6 +120,7 @@ date = "2021"
 description = [
   "Various simple games made in Godot as Proof of Concepts for learning purposes",
   "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
+  "Available at https://github.com/SakuraKat",
   "My contribution: Developed all the games in Godot",
 ]
 tags = ["Godot", "GDScript"]
@@ -238,11 +238,12 @@ date = "2021"
 description = [
   "Created an original character (OC) using VRoid Studio.",
   "Utilized self-taught Photoshop skills to create textures and assets for the OC.",
+  "VRM file: https://r2.sakurakat.systems/kait.vrm",
   "My contribution: Modeled the character, customized textures, and refined assets using Photoshop.",
 ]
 tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
 preview = "https://r2.sakurakat.systems/preview--kait.png"
-location = "https://r2.sakurakat.systems/kait.vrm"
+location = "https://sketchfab.com/3d-models/kait-57e49bfc4c3e4955bdb99b39cf254559"
 
 [[others]]
 visible = false
@@ -283,6 +284,16 @@ tags = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
 preview = "https://r2.sakurakat.systems/preview--kibty.png"
 location = "https://r2.sakurakat.systems/favicon.svg"
 
+[[others]]
+description = ["Personal nixos and home-manager configurations."]
+visible = false
+title = "NixOS Config"
+society = "Nix"
+date = "October 2024"
+tags = ["Nix", "NixOS", "Linux", "dot files"]
+preview = "https://r2.sakurakat.systems/preview--nixos-config.png"
+location = "https://github.com/pawarherschel/nixos-config"
+
 [bibliography]
 bibPath = ""
 refStyle = "apa"
@@ -313,7 +324,13 @@ info = [
 [[skills]]
 visible = true
 type = "Personal Interests"
-info = ["Manga & Scanlation", "VRChat", "Game Development", "GPU Acceleration"]
+info = [
+  "Manga & Scanlation",
+  "VRChat",
+  "Game Development",
+  "GPU Acceleration",
+  "NixOS",
+]
 
 [[skills]]
 visible = false
@@ -321,6 +338,6 @@ type = "Projects"
 info = ["Rust", "GDScript"]
 
 [[skills]]
-visible = false
+visible = true
 type = "Libraries"
-info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]
+info = ["cranelift", "rayon", "bevy", "tokio", "sqlx", "surrealdb"]
