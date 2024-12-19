@@ -78,6 +78,7 @@ description = [
   "Available on itch.io (https://pawarherschel.itch.io/fractured-elements)",
 ]
 tags = ["Game Development", "Unity", "C#"]
+preview = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
 [projects.location]
 github = "pawarherschel/CovUniGJ2024"
 
@@ -92,8 +93,9 @@ description = [
   "Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
 ]
 tags = ["Game Development", "Godot", "GDScript"]
+preview = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
 [projects.location]
-github ="pawarherschel/GMTK2023"
+github = "pawarherschel/GMTK2023"
 
 [[projects]]
 visible = true
@@ -105,8 +107,9 @@ description = [
   "It's being used as playground for networking",
 ]
 tags = ["Rust", "Bevy", "Game Development"]
+preview = "https://r2.sakurakat.systems/preview--bevy-pong.png"
 [projects.location]
-github ="pawarherschel/bevy-pong"
+github = "pawarherschel/bevy-pong"
 
 [[projects]]
 visible = true
@@ -118,8 +121,9 @@ description = [
   "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
 ]
 tags = ["Godot", "GDScript"]
+preview = "https://r2.sakurakat.systems/preview--sakurakat.png"
 [projects.location]
-github ="SakuraKat"
+github = "SakuraKat"
 
 [[projects]]
 visible = false
@@ -131,8 +135,9 @@ description = [
   "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles",
 ]
 tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
+preview = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.25.jpg"
 [projects.location]
-github ="pawarherschel/vrcx-insights"
+github = "pawarherschel/vrcx-insights"
 
 [[projects]]
 visible = false
@@ -145,8 +150,9 @@ description = [
   "It then converts the data into an Excel spreadsheet and writes markdown files for each item.",
 ]
 tags = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
+preview = "https://r2.sakurakat.systems/preview--booth-archiver.png"
 [projects.location]
-github ="pawarherschel/booth_archiver"
+github = "pawarherschel/booth_archiver"
 
 [[projects]]
 visible = false
@@ -165,22 +171,24 @@ tags = [
   "Real-time Communication",
   "Serverless",
 ]
+preview = "https://r2.sakurakat.systems/preview--workers-websocket-durable-objects.png"
 [projects.location]
-github ="pawarherschel/workers-durable-object-websocket-synced"
+github = "pawarherschel/workers-durable-object-websocket-synced"
 
 [[projects]]
 visible = false
 title = "Brainfuck Compiler with Cranelift"
 society = "Personal Project"
-date = "November 18, 2024"
+date = "November 2024"
 description = [
   "Following a blogpost https://rodrigodd.github.io/2022/11/26/bf_compiler-part3.html",
   "The project demonstrates how to parse Brainfuck code, generate intermediate representation (IR) using Cranelift, and disassemble the generated machine code using Capstone.",
   "The repository includes sample Brainfuck programs and provides a complete implementation in Rust.",
 ]
 tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
+preview = "https://r2.sakurakat.systems/preview--bf-compiler.png"
 [projects.location]
-github ="pawarherschel/BFCranelift"
+github = "pawarherschel/BFCranelift"
 
 [[projects]]
 visible = true
@@ -200,22 +208,24 @@ tags = [
   "GIMP",
   "CLI Tool",
 ]
+preview = "https://r2.sakurakat.systems/preview--krita-palette-creator.png"
 [projects.location]
-github ="pawarherschel/krita-palette-creator"
+github = "pawarherschel/krita-palette-creator"
 
 [[projects]]
 visible = false
 title = "Ray Tracing in Rust"
 society = "Personal Project"
-date = "December 17, 2024"
+date = "November 2023"
 description = [
   "Made by following raytracing in a weekend",
   "Parallelly processes with Rayon and provides progress indication using the Indicatif crate.",
   "The implementation includes features like anti-aliasing, multiple object rendering, and image output in both PPM and PNG formats.",
 ]
 tags = ["Ray Tracing", "Rust", "Rayon", "image"]
+preview = "https://r2.sakurakat.systems/preview--raytracer.png"
 [projects.location]
-github ="pawarherschel/raytracinginrust"
+github = "pawarherschel/raytracinginrust"
 
 [bibliography]
 bibPath = ""
