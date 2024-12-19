@@ -268,3 +268,50 @@ info = ["Rust", "GDScript"]
 visible = false
 type = "Libraries"
 info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]
+
+[[other]]
+visible = false
+title = "VRoid Studio"
+society = "Original Character"
+date = "2021"
+description = [
+  "Created an original character (OC) using VRoid Studio.",
+  "Utilized self-taught Photoshop skills to enhance textures and assets for the OC.",
+]
+tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
+preview = "https://r2.sakurakat.systems/preview--kait.png"
+location = "https://r2.sakurakat.systems/kait.vrm"
+
+[[other]]
+visible = false
+title = "Rust for Lunch"
+society = "Pixel Art"
+date = "March 2024"
+description = [
+  "Designed fan art for 'Rust for Lunch', an online meetup attended.",
+]
+tags = ["Pixel Art", "Fan Art", "Rust for Lunch"]
+preview = "https://r2.sakurakat.systems/preview--rfl.png"
+location = "https://r2.sakurakat.systems/preview--rfl.png"
+
+[[other]]
+visible = false
+title = "Fractured Elements"
+society = "Pixel Art"
+date = "March 2024"
+description = ["Designed logo for 'Fractured Elements'game."]
+tags = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
+preview = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
+location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
+
+[[other]]
+visible = false
+title = "Logo"
+society = "Personal Project"
+date = "March 2024"
+description = [
+  "Designed a logo inspired by the creator's online username by combining and editing two emojis.",
+]
+tags = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
+preview = "https://r2.sakurakat.systems/preview--kibty.png"
+location = "https://r2.sakurakat.systems/favicon.svg"
