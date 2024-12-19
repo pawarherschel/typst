@@ -199,7 +199,7 @@ society = "Personal Project"
 date = "September 2024"
 description = [
   "A tool to create Krita and GIMP compatible palettes from images by applying color quantization algorithms.",
-  "It generates a `.gpl` palette file and creates a preview image for visual reference. Supports adjustable depth levels for quantization and optional color tolerance settings.",
+  "It generates a `.gpl` palette file and creates a preview image for visual reference. Supports adjustable depth levels for quantization and optional color tolerance settings. View an example here: https://r2.sakurakat.systems/preview--krita-palette-creator.png",
   "My contribution: Contributed to rosettacode https://rosettacode.org/wiki/Color_quantization#Rust, and implemented color deduplication by using similarity score.",
 ]
 tags = [
