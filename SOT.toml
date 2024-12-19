@@ -271,8 +271,8 @@ info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]
 
 [[others]]
 visible = false
-title = "VRoid Studio"
-society = "Original Character"
+title = "Kait"
+society = "VRoid Studio"
 date = "2021"
 description = [
   "Created an original character (OC) using VRoid Studio.",
@@ -306,7 +306,7 @@ location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
 
 [[others]]
 visible = false
-title = "Logo"
+title = "Personal Logo"
 society = "Personal Project"
 date = "March 2024"
 description = [
