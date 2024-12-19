@@ -269,7 +269,7 @@ visible = false
 type = "Libraries"
 info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]
 
-[[other]]
+[[others]]
 visible = false
 title = "VRoid Studio"
 society = "Original Character"
@@ -282,7 +282,7 @@ tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
 preview = "https://r2.sakurakat.systems/preview--kait.png"
 location = "https://r2.sakurakat.systems/kait.vrm"
 
-[[other]]
+[[others]]
 visible = false
 title = "Rust for Lunch"
 society = "Pixel Art"
@@ -294,7 +294,7 @@ tags = ["Pixel Art", "Fan Art", "Rust for Lunch"]
 preview = "https://r2.sakurakat.systems/preview--rfl.png"
 location = "https://r2.sakurakat.systems/preview--rfl.png"
 
-[[other]]
+[[others]]
 visible = false
 title = "Fractured Elements"
 society = "Pixel Art"
@@ -304,7 +304,7 @@ tags = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
 preview = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
 location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
 
-[[other]]
+[[others]]
 visible = false
 title = "Logo"
 society = "Personal Project"
