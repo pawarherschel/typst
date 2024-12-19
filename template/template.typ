@@ -1,3 +1,4 @@
+
 // brilliant-CV 2023-11-01 mintyfrankie
 // Github Repo: https://github.com/mintyfrankie/brilliant-CV
 // Typst version: 0.9.0
@@ -9,7 +10,7 @@
 
 /* Language-specific Macros */
 #let nonLatinOverwrite = false
-#let nonLatinFont = ""
+// #let nonLatinFont = ""
 #let nonLatinLanguageCode = ("zh", "ja", "ko", "ru")
 #for lang in nonLatinLanguageCode {
   if varLanguage == lang {
@@ -28,10 +29,9 @@
 
 #let autoImport(file) = {
   if varLanguage == "" {
-    include {"../modules/" + file + ".typ"}
-  }
-  else {
-    include {"../modules_" + varLanguage + "/" + file + ".typ"}
+    include { "../modules/" + file + ".typ" }
+  } else {
+    include { "../modules_" + varLanguage + "/" + file + ".typ" }
   }
 }
 
@@ -49,9 +49,9 @@
 
 
 /* Styles */
-#let fontList = ("Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let fontList = ("Source Sans Pro", "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
-#let headerFont = ("Roboto", nonLatinFont)
+#let headerFont = "Roboto"
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),
@@ -79,166 +79,215 @@
 #let beforeEntrySkip = 1pt
 #let beforeEntryDescriptionSkip = 1pt
 
-#let headerFirstNameStyle(str) = {text(
-  font: headerFont,
-  size: 32pt,
-  weight: "light",
-  fill: regularColors.darkgray,
-  str
-)}
-
-#let headerLastNameStyle(str) = {text(
-  font: headerFont,
-  size: 32pt,
-  weight: "bold",
-  str
-)}
-
-#let headerInfoStyle(str) = {text(
-  size: 10pt,
-  fill: accentColor,
-  str
-)}
-
-#let headerQuoteStyle(str) = {text(
-  size: 10pt,
-  weight: "medium",
-  style: "italic",
-  fill: accentColor,
-  str
-)}
-
-#let sectionTitleStyle(str, color:black) = {text(
-  size: 16pt, 
-  weight: "bold", 
-  fill: color,
-  str
-)}
-
-#let entryA1Style(str) = {text(
-  size: 10pt,
-  weight: "bold",
-  str
-)}
-
-
-#let entryA2Style(str) = {align(right, text(
-  weight: "medium",
-  fill: accentColor,
-  style: "oblique",
-  str
-))}
-
-#let entryB1Style(str) = {text(
-  size: 8pt,
-  fill: accentColor,
-  weight: "medium",
-  smallcaps(str)
-)}
-
-#let entryB2Style(str) = {align(right, text(
-  size: 8pt,
-  weight: "medium",
-  fill: gray,
-  style: "oblique",
-  str
-))}
-
-#let entryDescriptionStyle(str) = {text(
-  fill: regularColors.lightgray,
-  {
-    v(beforeEntryDescriptionSkip)
-    str
-  }
-)}
-
-#let entryTagStyle(str) = {align(center, text(
-  size: 8pt,
-  weight: "regular",
-  str
-))}
-
-#let entryTagListStyle(tags) = {for tag in tags {
-  box(
-    inset: (x: 0.25em),
-    outset: (y: 0.25em),
-    fill: regularColors.subtlegray, 
-    radius: 3pt,
-    entryTagStyle(tag),
+#let headerFirstNameStyle(str) = {
+  text(
+    font: headerFont,
+    size: 32pt,
+    weight: "light",
+    fill: regularColors.darkgray,
+    str,
   )
-  h(5pt)
-}}
-
-
-#let skillTypeStyle(str) = {align(right, text(
-  size: 10pt,
-  weight: "bold",
-  str))
 }
 
-#let skillInfoStyle(str) = {text(
-  str
-)}
-
-#let honorDateStyle(str) = {align(right, text(
-  str))
+#let headerLastNameStyle(str) = {
+  text(
+    font: headerFont,
+    size: 32pt,
+    weight: "bold",
+    str,
+  )
 }
 
-#let honorTitleStyle(str) = {text(
-  weight: "bold",
-  str
-)}
+#let headerInfoStyle(str) = {
+  text(
+    size: 10pt,
+    fill: accentColor,
+    str,
+  )
+}
 
-#let honorIssuerStyle(str) = {text(
-  str
-)}
+#let headerQuoteStyle(str) = {
+  text(
+    size: 10pt,
+    weight: "medium",
+    style: "italic",
+    fill: accentColor,
+    str,
+  )
+}
 
-#let honorLocationStyle(str) = {align(right, text(
-  weight: "medium",
-  fill: accentColor,
-  style: "oblique",
-  str
-))}
+#let sectionTitleStyle(str, color: black) = {
+  text(
+    size: 16pt,
+    weight: "bold",
+    fill: color,
+    str,
+  )
+}
 
-#let publicationStyle(str) = {text(
-  str
-)}
+#let entryA1Style(str) = {
+  text(
+    size: 10pt,
+    weight: "bold",
+    str,
+  )
+}
 
-#let footerStyle(str) = {text(
-  size: 8pt,
-  fill: rgb("#999999"),
-  smallcaps(str)
-)}
 
-#let letterHeaderNameStyle(str) = {text(
-  fill: accentColor,
-  weight: "bold",
-  str
-)}
+#let entryA2Style(str) = {
+  align(
+    right,
+    text(
+      weight: "medium",
+      fill: accentColor,
+      style: "oblique",
+      str,
+    ),
+  )
+}
 
-#let letterHeaderAddressStyle(str) = {text(
-  fill: gray,
-  size: 0.9em,
-  smallcaps(str)
-)}
+#let entryB1Style(str) = {
+  text(
+    size: 8pt,
+    fill: accentColor,
+    weight: "medium",
+    smallcaps(str),
+  )
+}
 
-#let letterDateStyle(str) = {text(
-  size: 0.9em,
-  style: "italic",
-  str
-)}
+#let entryB2Style(str) = {
+  align(
+    right,
+    text(
+      size: 8pt,
+      weight: "medium",
+      fill: gray,
+      style: "oblique",
+      str,
+    ),
+  )
+}
 
-#let letterSubjectStyle(str) = {text(
-  fill: accentColor,
-  weight: "bold",
-  underline(str)
-)}
+#let entryDescriptionStyle(str) = {
+  text(
+    fill: regularColors.lightgray,
+    {
+      v(beforeEntryDescriptionSkip)
+      str
+    },
+  )
+}
+
+#let entryTagStyle(str) = {
+  align(
+    center,
+    text(
+      size: 8pt,
+      weight: "regular",
+      str,
+    ),
+  )
+}
+
+#let entryTagListStyle(tags) = {
+  for tag in tags {
+    box(
+      inset: (x: 0.25em),
+      outset: (y: 0.25em),
+      fill: regularColors.subtlegray,
+      radius: 3pt,
+      entryTagStyle(tag),
+    )
+    h(5pt)
+  }
+}
+
+
+#let skillTypeStyle(str) = {
+  align(
+    right,
+    text(
+      size: 10pt,
+      weight: "bold",
+      str,
+    ),
+  )
+}
+
+#let skillInfoStyle(str) = { text(str) }
+
+#let honorDateStyle(str) = {
+  align(right, text(str))
+}
+
+#let honorTitleStyle(str) = {
+  text(
+    weight: "bold",
+    str,
+  )
+}
+
+#let honorIssuerStyle(str) = { text(str) }
+
+#let honorLocationStyle(str) = {
+  align(
+    right,
+    text(
+      weight: "medium",
+      fill: accentColor,
+      style: "oblique",
+      str,
+    ),
+  )
+}
+
+#let publicationStyle(str) = { text(str) }
+
+#let footerStyle(str) = {
+  text(
+    size: 8pt,
+    fill: rgb("#999999"),
+    smallcaps(str),
+  )
+}
+
+#let letterHeaderNameStyle(str) = {
+  text(
+    fill: accentColor,
+    weight: "bold",
+    str,
+  )
+}
+
+#let letterHeaderAddressStyle(str) = {
+  text(
+    fill: gray,
+    size: 0.9em,
+    smallcaps(str),
+  )
+}
+
+#let letterDateStyle(str) = {
+  text(
+    size: 0.9em,
+    style: "italic",
+    str,
+  )
+}
+
+#let letterSubjectStyle(str) = {
+  text(
+    fill: accentColor,
+    weight: "bold",
+    underline(str),
+  )
+}
 
 
 /* Functions */
 #let cvHeader(
   align: left,
-  hasPhoto: true
+  hasPhoto: true,
 ) = {
   let makeHeaderInfo() = {
     let personalInfoIcons = (
@@ -273,33 +322,34 @@
         })
         continue
       }
-      if v != "" {box({
-        
-        // Adds icons
-        personalInfoIcons.at(k) + h(5pt)
-        // Adds hyperlinks
-        if k == "email" {
-          link("mailto:" + v)[#v]
-        } else if k == "linkedin" {
-          link("https://www.linkedin.com/in/" + v)[#v]
-        } else if k == "github" {
-          link("https://github.com/" + v)[#v]
-        } else if k == "gitlab" {
-          link("https://gitlab.com/" + v)[#v]
-        } else if k == "homepage" {
-          link("https://" + v)[#v]
-        } else if k == "orcid" {
-          link("https://orcid.org/" + v)[#v]
-        } else if k == "researchgate" {
-          link("https://www.researchgate.net/profile/" + v)[#v]
-        } else {
-          v
-        }
-      })} 
+      if v != "" {
+        box({
+          // Adds icons
+          personalInfoIcons.at(k) + h(5pt)
+          // Adds hyperlinks
+          if k == "email" {
+            link("mailto:" + v)[#v]
+          } else if k == "linkedin" {
+            link("https://www.linkedin.com/in/" + v)[#v]
+          } else if k == "github" {
+            link("https://github.com/" + v)[#v]
+          } else if k == "gitlab" {
+            link("https://gitlab.com/" + v)[#v]
+          } else if k == "homepage" {
+            link("https://" + v)[#v]
+          } else if k == "orcid" {
+            link("https://orcid.org/" + v)[#v]
+          } else if k == "researchgate" {
+            link("https://www.researchgate.net/profile/" + v)[#v]
+          } else {
+            v
+          }
+        })
+      }
       // Adds hBar
-        if n != personalInfo.len() {
-          hBar() 
-        }
+      if n != personalInfo.len() {
+        hBar()
+      }
       n = n + 1
     }
   }
@@ -321,7 +371,7 @@
     } else {
       v(3.6cm)
     }
-  } 
+  }
 
   let makeHeader(leftComp, rightComp, columns, align) = table(
     columns: columns,
@@ -329,8 +379,8 @@
     stroke: none,
     column-gutter: 15pt,
     align: align + horizon,
-    {leftComp},
-    {rightComp}
+    { leftComp },
+    { rightComp }
   )
 
   if hasPhoto {
@@ -341,7 +391,7 @@
 }
 
 #let cvSection(title, highlighted: true, letters: 3) = {
-  let highlightText = title.slice(0,letters)
+  let highlightText = title.slice(0, letters)
   let normalText = title.slice(letters)
 
   v(beforeSectionSkip)
@@ -349,8 +399,8 @@
     sectionTitleStyle(title, color: accentColor)
   } else {
     if highlighted {
-    sectionTitleStyle(highlightText, color: accentColor)
-    sectionTitleStyle(normalText, color: black)
+      sectionTitleStyle(highlightText, color: accentColor)
+      sectionTitleStyle(normalText, color: black)
     } else {
       sectionTitleStyle(title, color: black)
     }
@@ -366,10 +416,10 @@
   location: "Location",
   description: "Description",
   logo: "",
-  tags: ()
+  tags: (),
 ) = {
   let ifSocietyFirst(condition, field1, field2) = {
-    return if condition {field1} else {field2}
+    return if condition { field1 } else { field2 }
   }
   let ifLogo(path, ifTrue, ifFalse) = {
     return if varDisplayLogo {
@@ -380,7 +430,7 @@
     return if path == "" { 0% } else { 4% }
   }
   let setLogoContent(path) = {
-    return if logo == "" [] else {image(path, width: 100%)}
+    return if logo == "" [] else { image(path, width: 100%) }
   }
   v(beforeEntrySkip)
   table(
@@ -396,11 +446,12 @@
       stroke: none,
       row-gutter: 6pt,
       align: auto,
-      {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title))},
-      {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location,date))},
-      {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
-      {entryB2Style(ifSocietyFirst(varEntrySocietyFirst, date,location))},
-    )
+      { entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title)) },
+      { entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location, date)) },
+
+      { entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society)) },
+      { entryB2Style(ifSocietyFirst(varEntrySocietyFirst, date, location)) },
+    ),
   )
   entryDescriptionStyle(description)
   entryTagListStyle(tags)
@@ -415,8 +466,7 @@
     inset: 0pt,
     column-gutter: 10pt,
     stroke: none,
-    skillTypeStyle(type),
-    skillInfoStyle(info),
+    skillTypeStyle(type), skillInfoStyle(info),
   )
   v(-6pt)
 }
@@ -426,7 +476,7 @@
   title: "Title",
   issuer: "",
   url: "",
-  location: ""
+  location: "",
 ) = {
   table(
     columns: (16%, 1fr, 15%),
@@ -437,12 +487,16 @@
     honorDateStyle(date),
     if issuer == "" {
       honorTitleStyle(title)
-    } else if url != "" { [
-      #honorTitleStyle(link(url)[#title]), #honorIssuerStyle(issuer)
-    ] } else { [
-      #honorTitleStyle(title), #honorIssuerStyle(issuer)
-    ]},
-    honorLocationStyle(location)
+    } else if url != "" {
+      [
+        #honorTitleStyle(link(url)[#title]), #honorIssuerStyle(issuer)
+      ]
+    } else {
+      [
+        #honorTitleStyle(title), #honorIssuerStyle(issuer)
+      ]
+    },
+    honorLocationStyle(location),
   )
   v(-6pt)
 }
@@ -464,9 +518,8 @@
       columns: (1fr, auto),
       inset: 0pt,
       stroke: none,
-      footerStyle([#firstName #lastName]),
-      footerStyle(languageSwitch(cvFooterInternational)),
-    )
+      footerStyle([#firstName #lastName]), footerStyle(languageSwitch(cvFooterInternational)),
+    ),
   )
 }
 
@@ -475,7 +528,7 @@
   recipientName: "Company Name Here",
   recipientAddress: "Company Address Here",
   date: "Today's Date",
-  subject: "Subject: Hey!"
+  subject: "Subject: Hey!",
 ) = {
   letterHeaderNameStyle(firstName + " " + lastName)
   v(1pt)
@@ -488,12 +541,13 @@
   letterDateStyle(date)
   v(1pt)
   letterSubjectStyle(subject)
-  linebreak(); linebreak()
+  linebreak()
+  linebreak()
 }
 
 #let letterSignature(path) = {
   linebreak()
-  place(right, dx:-5%, dy:0%, image(path, width: 25%))
+  place(right, dx: -5%, dy: 0%, image(path, width: 25%))
 }
 
 #let letterFooter() = {
@@ -503,9 +557,8 @@
       columns: (1fr, auto),
       inset: 0pt,
       stroke: none,
-      footerStyle([#firstName #lastName]),
-      footerStyle(languageSwitch(letterFooterInternational)),
-    )
+      footerStyle([#firstName #lastName]), footerStyle(languageSwitch(letterFooterInternational)),
+    ),
   )
 }
 

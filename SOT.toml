@@ -68,15 +68,16 @@ logo = "src/logos/sis.png"
 description = []
 
 [[projects]]
-visible = true
-title = "Fractured Elements"
-society = "Coventry University Summer School '24 Game Jam"
-date = "July 2024"
 description = [
   "\"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.",
   "The main character changes form every few seconds and each form has a unique associated attack.",
   "Available on itch.io (https://pawarherschel.itch.io/fractured-elements)",
+  "My contribution: Worked on game mechanics, character transitions, and attack implementations using Unity and CSharp",
 ]
+visible = true
+title = "Fractured Elements"
+society = "Coventry University Summer School '24 Game Jam"
+date = "July 2024"
 tags = ["Game Development", "Unity", "C#"]
 preview = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
 [projects.location]
@@ -91,6 +92,7 @@ description = [
   "A game made for the GMTK Game Jam 2023, the theme was 'Roles Reverse'.",
   "This is a simple game where the roles from the game Space Invaders are reversed.",
   "Available on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
+  "My contribution: The whole game.",
 ]
 tags = ["Game Development", "Godot", "GDScript"]
 preview = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
@@ -103,8 +105,8 @@ title = "Bevy Pong"
 society = "Personal Project"
 date = "October 2024"
 description = [
-  "A simple Pong game made with Bevy.",
-  "It's being used as playground for networking",
+  "A simple Pong game made with Bevy. It's being used as playground for networking.",
+  "My contribution: The whole game.",
 ]
 tags = ["Rust", "Bevy", "Game Development"]
 preview = "https://r2.sakurakat.systems/preview--bevy-pong.png"
@@ -112,13 +114,14 @@ preview = "https://r2.sakurakat.systems/preview--bevy-pong.png"
 github = "pawarherschel/bevy-pong"
 
 [[projects]]
-visible = true
+visible = false
 title = "Various Simple Games made in Godot"
 society = "Personal Projects"
 date = "2021"
 description = [
   "Various simple games made in Godot as Proof of Concepts for learning purposes",
   "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
+  "My contribution: Developed all the games in Godot",
 ]
 tags = ["Godot", "GDScript"]
 preview = "https://r2.sakurakat.systems/preview--sakurakat.png"
@@ -133,6 +136,7 @@ date = "2023 - Present"
 description = [
   "A simple program to find out the various friend circles which might exist via the data collected by VRCX",
   "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles",
+  "My contribution: Implemented data-mining algorithms in Rust",
 ]
 tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
 preview = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.25.jpg"
@@ -145,9 +149,8 @@ title = "Booth Archiver"
 society = "Personal Project"
 date = "2023 - Present"
 description = [
-  "A simple CLI tool to archive the contents of your booth wishlist.",
-  "Written in Rust, it scrapes the Booth website and downloads images for each item.",
-  "It then converts the data into an Excel spreadsheet and writes markdown files for each item.",
+  "A simple CLI tool to archive the contents of your booth wishlist. It scrapes the data and compiles it into an Excel spreadsheet for ease of use.",
+  "My contribution: Developed scraping logic, implemented Excel sheet generation",
 ]
 tags = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
 preview = "https://r2.sakurakat.systems/preview--booth-archiver.png"
@@ -162,6 +165,7 @@ date = "December 2024"
 description = [
   "This repository contains a Cloudflare Workers project that demonstrates the use of Durable Objects to synchronize WebSocket connections.",
   "It allows clients to send messages to increment, decrement, or get the current value of the counter, and broadcasts the updated counter value to all connected clients.",
+  "My contribution: Built the WebSocket logic, integrated Durable Objects, and ensured real-time synchronization among multiple clients.",
 ]
 tags = [
   "Cloudflare Workers",
@@ -182,8 +186,6 @@ society = "Personal Project"
 date = "November 2024"
 description = [
   "Following a blogpost https://rodrigodd.github.io/2022/11/26/bf_compiler-part3.html",
-  "The project demonstrates how to parse Brainfuck code, generate intermediate representation (IR) using Cranelift, and disassemble the generated machine code using Capstone.",
-  "The repository includes sample Brainfuck programs and provides a complete implementation in Rust.",
 ]
 tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
 preview = "https://r2.sakurakat.systems/preview--bf-compiler.png"
@@ -196,9 +198,9 @@ title = "Krita Palette Creator"
 society = "Personal Project"
 date = "September 2024"
 description = [
-  "A tool to create Krita-compatible palettes from images by applying color quantization algorithms.",
-  "It generates a `.gpl` palette file and creates a preview image for visual reference.",
-  "Supports adjustable depth levels for quantization and optional color tolerance settings.",
+  "A tool to create Krita and GIMP compatible palettes from images by applying color quantization algorithms.",
+  "It generates a `.gpl` palette file and creates a preview image for visual reference. Supports adjustable depth levels for quantization and optional color tolerance settings.",
+  "My contribution: Contributed to rosettacode https://rosettacode.org/wiki/Color_quantization#Rust, and implemented color deduplication by using similarity score.",
 ]
 tags = [
   "Rust",
@@ -220,12 +222,66 @@ date = "November 2023"
 description = [
   "Made by following raytracing in a weekend",
   "Parallelly processes with Rayon and provides progress indication using the Indicatif crate.",
-  "The implementation includes features like anti-aliasing, multiple object rendering, and image output in both PPM and PNG formats.",
+  "The implementation includes image output in both PPM and PNG formats.",
+  "My contribution: Implemented parallel processing with Rayon and explored cpu-based raytracing",
 ]
 tags = ["Ray Tracing", "Rust", "Rayon", "image"]
 preview = "https://r2.sakurakat.systems/preview--raytracer.png"
 [projects.location]
 github = "pawarherschel/raytracinginrust"
+
+[[others]]
+visible = false
+title = "Kait"
+society = "VRoid Studio"
+date = "2021"
+description = [
+  "Created an original character (OC) using VRoid Studio.",
+  "Utilized self-taught Photoshop skills to create textures and assets for the OC.",
+  "My contribution: Modeled the character, customized textures, and refined assets using Photoshop.",
+]
+tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
+preview = "https://r2.sakurakat.systems/preview--kait.png"
+location = "https://r2.sakurakat.systems/kait.vrm"
+
+[[others]]
+visible = false
+title = "Rust for Lunch"
+society = "Pixel Art"
+date = "March 2024"
+description = [
+  "Designed fan art for 'Rust for Lunch', an online meetup attended.",
+  "My contribution: Created the artwork using pixel art tools",
+]
+tags = ["Pixel Art", "Fan Art", "Rust for Lunch"]
+preview = "https://r2.sakurakat.systems/preview--rfl.png"
+location = "https://r2.sakurakat.systems/preview--rfl.png"
+
+[[others]]
+description = [
+  "Designed logo for 'Fractured Elements'game.",
+  "My contribution: Conceptualized and designed the logo using Pixelorama to represent the game's theme.",
+]
+visible = false
+title = "Fractured Elements"
+society = "Pixel Art"
+date = "March 2024"
+tags = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
+preview = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
+location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
+
+[[others]]
+visible = false
+title = "Personal Logo"
+society = "Personal Project"
+date = "March 2024"
+description = [
+  "Designed a logo inspired by the creator's online username by combining and editing two emojis.",
+  "My contribution: Blended emojis and refined the design using Adobe Illustrator to create a cohesive logo.",
+]
+tags = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
+preview = "https://r2.sakurakat.systems/preview--kibty.png"
+location = "https://r2.sakurakat.systems/favicon.svg"
 
 [bibliography]
 bibPath = ""
@@ -268,50 +324,3 @@ info = ["Rust", "GDScript"]
 visible = false
 type = "Libraries"
 info = ["Bevy", "Clap", "Rayon", "ureq", "SQLx", "tokio"]
-
-[[others]]
-visible = false
-title = "Kait"
-society = "VRoid Studio"
-date = "2021"
-description = [
-  "Created an original character (OC) using VRoid Studio.",
-  "Utilized self-taught Photoshop skills to enhance textures and assets for the OC.",
-]
-tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
-preview = "https://r2.sakurakat.systems/preview--kait.png"
-location = "https://r2.sakurakat.systems/kait.vrm"
-
-[[others]]
-visible = false
-title = "Rust for Lunch"
-society = "Pixel Art"
-date = "March 2024"
-description = [
-  "Designed fan art for 'Rust for Lunch', an online meetup attended.",
-]
-tags = ["Pixel Art", "Fan Art", "Rust for Lunch"]
-preview = "https://r2.sakurakat.systems/preview--rfl.png"
-location = "https://r2.sakurakat.systems/preview--rfl.png"
-
-[[others]]
-visible = false
-title = "Fractured Elements"
-society = "Pixel Art"
-date = "March 2024"
-description = ["Designed logo for 'Fractured Elements'game."]
-tags = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
-preview = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
-location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
-
-[[others]]
-visible = false
-title = "Personal Logo"
-society = "Personal Project"
-date = "March 2024"
-description = [
-  "Designed a logo inspired by the creator's online username by combining and editing two emojis.",
-]
-tags = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
-preview = "https://r2.sakurakat.systems/preview--kibty.png"
-location = "https://r2.sakurakat.systems/favicon.svg"
