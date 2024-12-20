@@ -79,6 +79,7 @@ title = "Fractured Elements"
 society = "Coventry University Summer School '24 Game Jam"
 date = "July 2024"
 tags = ["Game Development", "Unity", "C#"]
+preview = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
 [projects.location]
 github = "pawarherschel/CovUniGJ2024"
 
